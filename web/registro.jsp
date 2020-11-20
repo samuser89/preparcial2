@@ -118,7 +118,7 @@
         
         <div class="container">
             <br>
-            <h1><label class="badge badge-pill badge-warning">Subsidio: 
+            <h1><label class="badge badge-pill badge-<%=request.getAttribute("Subsi") == "Aplica" ? "succes" : "danger"%>">Subsidio: 
                 <span class="badge badge-pill badge-light"><%= request.getAttribute("Subsi")%></span>
             </label></h1>
             <h6>
